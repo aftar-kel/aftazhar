@@ -18,7 +18,6 @@
             line-height: 1.6;
         }
 
-        /* Navigation */
         nav {
             background: #222;
             padding: 1rem;
@@ -56,14 +55,12 @@
             color: white;
         }
 
-        /* Container */
         .container {
             max-width: 1000px;
             margin: 2rem auto;
             padding: 0 1rem;
         }
 
-        /* Header */
         header {
             text-align: center;
             background: #333;
@@ -82,7 +79,6 @@
             color: #ddd;
         }
 
-        /* Video Section */
         .video-section {
             background: white;
             border-radius: 12px;
@@ -99,24 +95,33 @@
 
         .video-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             border-radius: 8px;
             margin-bottom: 1rem;
-            background: #000; /* Black background for empty video area */
+            background: #000;
         }
 
-        .video-container video {
+        .video-container video, .video-container img {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Maintains video aspect ratio */
+            object-fit: cover;
         }
 
-        /* Footer */
+        .video-section p {
+            margin-bottom: 0.5rem;
+        }
+
+        .video-section aside {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+
         footer {
             text-align: center;
             background: #222;
@@ -126,7 +131,6 @@
             border-radius: 8px 8px 0 0;
         }
 
-        /* Responsive */
         @media (max-width: 600px) {
             h1 {
                 font-size: 1.7rem;
@@ -145,7 +149,7 @@
             <div class="nav-links">
                 <a href="Index.html">Home</a>
                 <a href="details.html">Details</a>
-                <a href="Examples.html" class="active">Examples</a>
+                <a href="examples.html" class="active">Examples</a>
             </div>
         </div>
     </nav>
@@ -156,27 +160,26 @@
             <p>Watch videos of different jet types</p>
         </header>
 
-        <!-- All Video Sections (Add your local video files here) -->
         <div class="video-section">
             <h2>F (Fighter)</h2>
             <div class="video-container">
                 <video controls>
                     <source src="Rickroll.mp4" type="video/mp4">
-
+                    Your browser does not support the video tag.
                 </video>
             </div>
-            <p>This fighter jet is called the F-117 nighthawk</p>
+            <p>This fighter jet is the F-117 Nighthawk</p>
         </div>
 
         <div class="video-section">
             <h2>B (Bomber)</h2>
             <div class="video-container">
                 <video controls>
-<source src="B.mp4" type="video/mp4">
-                    
+                    <source src="B.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
                 </video>
             </div>
-            <p>This video features the B-2 spirit in action</p>
+            <p>This video features the B-2 Spirit in action</p>
         </div>
 
         <div class="video-section">
@@ -184,96 +187,8 @@
             <div class="video-container">
                 <video controls>
                     <source src="A10.mp4" type="video/mp4">
-
-
-                </video>
-            </div>
-            <p> the A-10 Thunderbolt II has quite a unique sound .</p>
-        </div>
-
-        <div class="video-section">
-            <h2>C (Cargo/Transport)</h2>
-            <div class="video-container">
-                <video controls>
-                    <source src="C.mp4" type="video/mp4">
-
-                </video>
-            </div>
-            <p>the C-130 carries important luggage as such is also carries tons of flares</p>
-        </div>
-
-        <div class="video-section">
-            <h2>E (Electronics)</h2>
-            <div class="video-container">
-                <video controls>
-                    <source src="E.mp4" type="video/mp4">
-                    
-                </video>
-            </div>
-            <p>Discover electronic warfare aircraft like the EA-18G Growler.</p>
-        </div>
-
-        <div class="video-section">
-            <h2>T (Trainer)</h2>
-            <div class="video-container">
-<img src="T.png" width="325" height="175">
-            </div>
-            <p>this is an image of the T-38 Talon</p>
-            <aside> (P.S.
-            from this point we couldnt find videos suitable for the respective jets) </aside>
-        </div>
-
-        <div class="video-section">
-            <h2>P (Patrol)</h2>
-            <div class="video-container">
-<img src="P.png" width="325" height="175">
-              
-            </div>
-            <p>See maritime patrol aircraft like the P-8 Poseidon in action.</p>
-        </div>
-
-        <div class="video-section">
-            <h2>R (Reconnaissance)</h2>
-            <div class="video-container">
-
-<img src="Rc.png" width="325" height="175">
-            </div>
-            <p>Explore reconnaissance aircraft like the RC-135 and their intelligence-gathering roles.</p>
-        </div>
-
-        <div class="video-section">
-            <h2>U (Utility)</h2>
-            <div class="video-container">
-<img src="U.png" width="325" height="175">
-            </div>
-            <p>Learn about multi-purpose utility aircraft like the U-2.</p>
-        </div>
-
-        <div class="video-section">
-            <h2>Q (UAV)</h2>
-            <div class="video-container">
-<img src="Drone.png" width="325" height="175">
-            <p>Watch videos of unmanned aerial vehicles (drones) used for surveillance and combat.</p>
-        </div>
-
-        <!-- Template for future additions -->
-        <!--
-        <div class="video-section">
-            <h2>YOUR DESIGNATION HERE</h2>
-            <div class="video-container">
-                <video controls>
-                    <source src="YOUR_VIDEO_FILE.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <p>YOUR DESCRIPTION HERE</p>
+            <p>The A-10 Thunderbolt II has a unique sound</p>
         </div>
-        -->
-
-        <footer>
-            <p>AFTAZHAR A. IBBA and WAREN S. TAVARES</p>
-        </footer>
-    </div>
-</body>
-</html>
-
